@@ -27,6 +27,9 @@ namespace ConsoleApp2
 
             Console.WriteLine(cat1.ToString());
 
+            cat1.Name="Vaska"; 
+            Console.WriteLine(cat1.Name);
+
         }
     }
 }

@@ -8,9 +8,10 @@ namespace ConsoleApp2
 {
     public class Cat
     {
-        public string Name;
         public float Age;
         public BreedEnum Breed;
+        private string _name;
+        public string Name {get; set;}
 
         public Cat(string name, float age, BreedEnum breed = BreedEnum.Brit)
         {
@@ -28,5 +29,7 @@ namespace ConsoleApp2
 
             return sb.ToString();
         }
+
+        
     }
 }
