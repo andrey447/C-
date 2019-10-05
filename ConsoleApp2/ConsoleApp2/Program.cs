@@ -10,6 +10,27 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
+            
+            var str1 = Console.ReadLine();
+            var str2 = Console.ReadLine();
+            bool isAValid = Int32.TryParse(str1, out int a);
+            bool isBValid = Int32.TryParse(str2, out int b);
+            Console.WriteLine(str1+str2);
+
+            if(!isAValid || !isBValid)
+                {
+                    Console.WriteLine("Invalid input");
+                }
+
+            if(isAValid && isBValid)
+                {
+                    Console.WriteLine(a+b);
+                }
+
+
+
+
+
             Cat cat1 = new Cat("Vaska", 10.1f, BreedEnum.Exotic);
             //Console.WriteLine(cat1.Name);
             //Console.WriteLine(cat1.Age);
